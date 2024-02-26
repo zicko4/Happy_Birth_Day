@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Happy Birthday Tito Ryan</strong>
+                        <p> Thank you for always being there for me,  Tito You're someone I can always count on, no matter what. Your advice is invaluable, and your support means the world to me. You're not only my tito, but also a true friend and role model.
+                        </p>
+                        <p>
+                            Happy Happy Birthday Tito Ryan, I hope your birthday is filled with everything you love, take care always po, see you soon tito! 
+                        </p>
+                        <p>
+                            Your Pamangkin,
+                        </p>
+                        <p>
+                            John John :>
+                        </p>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
